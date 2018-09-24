@@ -1,0 +1,22 @@
+
+
+.background_custom {
+    /* The image used */
+    background-image: url("../../assets/header_bg.jpg");
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: transparent ;
+}
+
+.h1_custom{
+    font-family: 'Playfair Display';
+}
