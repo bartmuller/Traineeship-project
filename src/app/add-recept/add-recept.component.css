@@ -13,4 +13,6 @@ background-color: lightgrey;
 
 .h2_custom{
     margin-top:20px;
+    font-family: 'Display';
+    font-weight: 700;
 }
