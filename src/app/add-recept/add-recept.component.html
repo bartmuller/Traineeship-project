@@ -4,9 +4,10 @@
     </div>
 
     <div class="row justify-content-center">
-      <button routerLink="/recept-form" type="button" class="btn btn-success buttom_custom ">RECEPT TOEVOEGEN +</button>
+        <button type="button" class="btn btn-success buttom_custom" routerLink="recept-form" [class.activated]="currentUrl == '/recept-form'">
+          test
+        </button>
     </div>
     
 </div>
 
-<router-outlet></router-outlet>

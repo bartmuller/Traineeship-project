@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-add-recept',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddReceptComponent implements OnInit {
 
-  constructor() { }
+  currentUrl: string;
+
+  constructor(private router: Router) {
+    router.events.subscribe((_: NavigationStart) => this.currentUrl = _.url);
+  }
 
   ngOnInit() {
   }
