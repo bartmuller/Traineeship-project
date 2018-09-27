@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';  // <-Add here
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReceptPageComponent } from './recept-page/recept-page.component';
+import { RegisterComponent } from './register/register.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { ReceptPageComponent } from './recept-page/recept-page.component';
     ReceptenboxComponent,
     NavbarComponent,
     ReceptPageComponent,
+    RegisterComponent,
+    LogInComponent,
 
   ],
   imports: [
