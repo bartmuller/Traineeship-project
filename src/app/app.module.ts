@@ -12,6 +12,8 @@ import { ReceptenboxComponent } from './receptenbox/receptenbox.component';
 import { HttpClientModule } from '@angular/common/http';  // <-Add here
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ReceptPageComponent } from './recept-page/recept-page.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     AddReceptComponent,
     ReceptFormComponent,
     ReceptenboxComponent,
-    NavbarComponent
+    NavbarComponent,
+    ReceptPageComponent,
+
   ],
   imports: [
     BrowserModule,
