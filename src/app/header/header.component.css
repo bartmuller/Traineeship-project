@@ -20,3 +20,36 @@
 .h1_custom, h2_custom{
     font-family: 'Playfair Display';
 }
+
+
+
+
+/*type text*/
+
+  
+  .line-1{
+    font-family: 'Playfair Display';
+    position: relative; 
+    float:left;
+    margin-top:0;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(55) 1s 1 normal both,
+               blinkTextCursor 500ms steps(55) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: transparent;}
+    to{border-right-color: transparent;}
+  }

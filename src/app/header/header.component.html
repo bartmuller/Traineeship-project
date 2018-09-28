@@ -1,3 +1,16 @@
+<script>
+
+    var typed = $(".typed");
+  
+  $(function() {
+    typed.typed({
+      strings: [  "Bart Muller.", "Frontend Trainee.", "UX Designer.", "Graphic Designer.",],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
+  </script>
+
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet"> <!--H1 Google Font-->
 
       <div class="background_custom alig-self-center"> <!--Background Image-->
@@ -6,9 +19,8 @@
               <div class="col-8">
                 <div class="jumbotron"> 
                       <h1 class="display-1 h1_custom">Lekkere Recepten</h1>
-                      <p class="lead">Dit is het kookplatform waar iedereen overheerlijke recepten kunt delen!</p>
-                        <hr class="my-4">
-                      <p class="lead">Eten is lekker!</p>
+                      <hr class="my-4">
+                      <p class="line-1 anim-typewriter">Dit is het kookplatform voor al jouw lekkere gerechten!</p>
                 </div>
               </div>
             </div>
@@ -17,4 +29,8 @@
    
 <app-add-recept></app-add-recept>
 <app-receptenbox></app-receptenbox>  
+
+
+
+
 

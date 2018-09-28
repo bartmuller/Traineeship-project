@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HEROES } from '../mock-heroes'; //----
+import { HEROES  } from '../mock-heroes'; //----
+import { Hero } from '../hero';
 
 import { Router, NavigationStart } from '@angular/router';
 
@@ -15,34 +16,8 @@ export class ReceptenboxComponent implements OnInit {
 
   heroes = HEROES;
 
-  recept = { 
-    id: 1, 
-    name: 'Mr. Nice' 
-  }
- 
-  titel =  ['lekker kippie', 'pan bami', 'kip'];
-  description = [
-    'een heerlijk kigerecht dat snel te bereiden is. Bla bla bla bla bla bla bla kip kip.',
-    'een heerlijk kigerecht dat snel te bereiden is. Bla bla bla bla bla bla bla kip kip.',
-    'een heerlijk kigerecht dat snel te bereiden is. Bla bla bla bla bla bla bla kip kip.',
-  ];
- time = [20, 30, 40];
- meal = ['Hoofdgerecht', 'Voorgerecht', 'Dessert'];
- categorie = ['Kip', 'Vegan', 'Rund'];
+  selectedHero: Hero;
 
- 
-
-
- 
-
- 
- 
- 
- 
- 
-  myRecept = this.titel[0];
-  
-  
 
   currentUrl: string;
 
@@ -52,6 +27,10 @@ export class ReceptenboxComponent implements OnInit {
 
   ngOnInit() {
      
+  }
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
   }
 
 }

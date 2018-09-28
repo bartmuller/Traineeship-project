@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Hero } from '../hero';
+import { HEROES  } from '../mock-heroes'; //----
+
+
 
 @Component({
   selector: 'app-recept-page',
@@ -6,6 +10,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recept-page.component.css']
 })
 export class ReceptPageComponent implements OnInit {
+  @Input() hero: Hero;
+  heroes = HEROES;
+
 
   constructor() { }
 

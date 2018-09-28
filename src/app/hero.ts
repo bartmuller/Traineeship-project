@@ -1,5 +1,9 @@
 export class Hero {
    
-    ingredient0: string;
-    ingredient1: string; 
-    ingredient2: string;   }
+    id:number;
+    title: string;
+    categorie: string;
+    meal: string;
+    time: string;
+    description: string;
+  }

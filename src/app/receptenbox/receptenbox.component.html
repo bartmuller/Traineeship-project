@@ -1,34 +1,19 @@
 
-
+<h2> De lekkerste recepten </h2>
 <div class="container">
-        <h2> De lekkerste recepten </h2>
+        
 <div class="row">
-    <div class="col-3">
+
+    <div class="col-4"  *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
         <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title"> {{titel[0]}}</h5>
-          <span class="badge badge-pill badge-success">{{categorie[0]}}</span>
-          <span class="badge badge-pill badge-success">{{meal[0]}}</span>
-          <span class="badge badge-pill badge-success">{{time[0]}} minuten</span>
-          <img class="card-img-top" src="https://az870929.vo.msecnd.net/cdn/media/home/recipes/recipes/w/weekendroastchicken.ashx?w=778" alt="Card image cap">
-          <p class="card-text">{{description[0]}}</p>
-          <ul>
-                <li *ngFor="let hero of heroes">{{hero.ingredient0}}</li>
-            </ul>
-            <a href="#" class="card-link">Link naar recept</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-3">
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{titel[1]}}</h5>
-          <span class="badge badge-pill badge-success">{{categorie[1]}}</span>
-          <span class="badge badge-pill badge-success">{{meal[1]}}</span>
-          <span class="badge badge-pill badge-success">{{time[1]}} minuten</span>
+          <h5 class="card-title">{{hero.title}}</h5>
+          <span class="badge badge-pill badge-success" >{{hero.categorie}}</span>
+          <span class="badge badge-pill badge-success" >{{hero.meal}}</span>
+          <span class="badge badge-pill badge-success" >{{hero.time}} minuten</span>
           <img class="card-img-top" src="https://yupitsvegan.com/wp-content/uploads/2015/03/one_pot_tandoori_quinoa_vegan_1.jpg" alt="Card image cap">
-          <p class="card-text">{{description[1]}}</p>
+          <p class="card-text">{{hero.description}}</p>
           <ul>
                 <li *ngFor="let hero of heroes">{{hero.ingredient1}}</li>
             </ul>
@@ -36,25 +21,9 @@
         </div>
         </div>
     </div>
+</div>
 
-    <div class="col-3">
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{titel[2]}}</h5>
-          <span class="badge badge-pill badge-success">{{categorie[2]}}</span>
-          <span class="badge badge-pill badge-success">{{meal[2]}}</span>
-          <span class="badge badge-pill badge-success">{{time[2]}} minuten</span>
-          <img class="card-img-top" src="https://az870929.vo.msecnd.net/cdn/media/home/recipes/recipes/w/weekendroastchicken.ashx?w=778" alt="Card image cap">
-          <p class="card-text">{{description[2]}}</p>
-          <ul>
-                <li *ngFor="let hero of heroes">{{hero.ingredient2}}</li>
-            </ul>
-            <a href="#" class="card-link">Link naar recept</a>
-        </div>
-      </div>
-    </div>
- </div>
 </div>
 
 
-
+<app-recept-page [hero]="selectedHero"></app-recept-page>
