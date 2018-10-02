@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { ReceptFormComponent } from '../recept-form/recept-form.component';
 
 @Component({
   selector: 'app-log-in',
