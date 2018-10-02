@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { HEROES  } from '../mock-heroes'; //----
 import { Hero } from '../hero';
@@ -10,9 +10,15 @@ import { Router, NavigationStart } from '@angular/router';
   templateUrl: './receptenbox.component.html',
   styleUrls: ['./receptenbox.component.css']
 })
+
+
+
 export class ReceptenboxComponent implements OnInit {
 
-  
+  // @Input() childMessage: string;
+
+ 
+  master = 'Master';
 
   heroes = HEROES;
 

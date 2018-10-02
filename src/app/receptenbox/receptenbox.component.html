@@ -1,23 +1,22 @@
 
-<h2> De lekkerste recepten </h2>
+<h2  id="test123"> De lekkerste recepten </h2>
 <div class="container">
         
 <div class="row">
 
-    <div class="col-4"  *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-        <div class="card" style="width: 18rem;">
+    <div class="col-lg-4 col-md-4"  *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"  (click)="onSelect(hero)">
+        <div class="card" style="width: 100%;">
         <div class="card-body">
           <h5 class="card-title">{{hero.title}}</h5>
           <span class="badge badge-pill badge-success" >{{hero.categorie}}</span>
           <span class="badge badge-pill badge-success" >{{hero.meal}}</span>
           <span class="badge badge-pill badge-success" >{{hero.time}} minuten</span>
-          <img class="card-img-top" src="https://yupitsvegan.com/wp-content/uploads/2015/03/one_pot_tandoori_quinoa_vegan_1.jpg" alt="Card image cap">
+          <img class="card-img-top" src='{{hero.image}}' alt="Card image cap">
           <p class="card-text">{{hero.description}}</p>
           <ul>
                 <li *ngFor="let hero of heroes">{{hero.ingredient1}}</li>
             </ul>
-            <a class="card-link" routerLink="recept-page" [class.activated]="currentUrl == '/recept-page'">Link naar recept</a>
+            <a class="card-link" routerLink="recept-page" [class.activated]="currentUrl == '/recept-page/1'">Link naar recept</a>
         </div>
         </div>
     </div>
@@ -26,4 +25,11 @@
 </div>
 
 
-<app-recept-page [hero]="selectedHero"></app-recept-page>
+
+<app-recept-page [hero]="selectedHero"></app-recept-page> 
+
+
+
+
+
+

@@ -21,6 +21,9 @@
     font-family: 'Playfair Display';
 }
 
+p.anim-typewriter{
+  font-size: 2em;
+}
 
 
 
@@ -52,4 +55,13 @@
   @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
     to{border-right-color: transparent;}
+  }
+
+
+  a {
+    color: white;
+  }
+
+  button{
+    align-content: center;
   }

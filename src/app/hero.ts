@@ -6,4 +6,5 @@ export class Hero {
     meal: string;
     time: string;
     description: string;
+    image: string;
   }
