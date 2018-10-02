@@ -11,6 +11,7 @@ import { DataService } from '../data.service';
   templateUrl: './recept-page.component.html',
   styleUrls: ['./recept-page.component.css']
 })
+
 export class ReceptPageComponent implements OnInit {
 
  // parentMessage = "message from parent"
@@ -23,6 +24,9 @@ export class ReceptPageComponent implements OnInit {
   
   constructor(private route: ActivatedRoute, private data: DataService) { 
      this.route.params.subscribe( params => this.hero = params.id );
+  }
+
+  ngOnInit() {
   }
 
 }
