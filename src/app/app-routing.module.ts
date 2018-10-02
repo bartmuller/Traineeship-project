@@ -7,6 +7,7 @@ import { ReceptPageComponent } from './recept-page/recept-page.component';
 import { LogInComponent } from './log-in/log-in.component'; //LOGIN COMPONENT
 import { RegisterComponent } from './register/register.component'; //REGISTER COMPONENT
 import { WwVergetenComponent } from './ww-vergeten/ww-vergeten.component'; //WACHTWOORD VERGETEN COMPONENT
+import { IngelogdComponent } from './ingelogd/ingelogd.component'; //INGELOGDE PAGINA 
 
 const routes: Routes = [
   { path: '', 
@@ -29,6 +30,9 @@ const routes: Routes = [
 
   { path: 'register', 
   component: RegisterComponent },
+  
+  { path: 'log-in/ingelogd', 
+  component: IngelogdComponent },
   
 ];
 
