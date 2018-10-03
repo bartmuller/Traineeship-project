@@ -33,7 +33,7 @@ const routes: Routes = [
   
   { path: 'log-in/ingelogd', 
   component: IngelogdComponent },
-  
+
 ];
 
 @NgModule({

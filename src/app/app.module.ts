@@ -17,6 +17,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { IngelogdComponent } from './ingelogd/ingelogd.component';
 import { WwVergetenComponent } from './ww-vergeten/ww-vergeten.component';
 import { FormsModule } from '@angular/forms';
+import { UserdetailsComponent } from './log-in/userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     LogInComponent,
     IngelogdComponent,
     WwVergetenComponent,
+    UserdetailsComponent,
 
   ],
   imports: [

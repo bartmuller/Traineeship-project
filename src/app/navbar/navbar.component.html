@@ -20,11 +20,15 @@
   </div>
 
   <!--LOG IN LINK-->
-  <button type="button" class="login" routerLink="log-in" [class.activated]="currentUrl == '/login'">
+  <div class="login">
+  <button type="button" class="btn btn-success" routerLink="log-in" [class.activated]="currentUrl == '/login'">
     Login
-  </button>
-
+  </button> 
+  </div>
+  
   <!--REGISTER LINK-->
-  <button type="button" class="register" routerLink="register" [class.activated]="currentUrl == '/register'">
+  <div class="register">
+  <button type="button" class="btn btn-success" routerLink="register" [class.activated]="currentUrl == '/register'">
     Register
   </button>
+  </div>
