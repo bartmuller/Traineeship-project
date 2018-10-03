@@ -23,6 +23,8 @@ export class LogInComponent implements OnInit {
     }
     else {
       console.log("Onjuiste username/wachtwoord!")
+      //TO-DO verwijder Alert indien pop-up werkt
+      alert("Let op! Onjuiste gebruikersnaam of wachtwoord");
     }
   }
 }
