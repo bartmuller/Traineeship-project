@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './log-in.component.html',
   styleUrls: ['./log-in.component.css']
 })
+
 export class LogInComponent implements OnInit {
 
   username
@@ -22,7 +23,8 @@ export class LogInComponent implements OnInit {
     
     }
     else {
-      console.log("Onjuiste username/wachtwoord!")
+      //TO-DO verwijder Alert indien pop-up werkt
+      alert("Onjuiste gebruikersnaam of wachtwoord");
     }
   }
 }
