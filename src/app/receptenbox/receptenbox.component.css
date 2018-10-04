@@ -18,7 +18,7 @@
         }
   
   .card-body p  {
-    margin-top:20px;
+    
   }
   
   
@@ -26,13 +26,13 @@
       text-align: center;
       font-family: 'Playfair Display';
       margin-top:75px;
-      margin-bottom:25px;
+      margin-bottom: 25px;
   }
   
   
   h2  {
         font-family: 'Playfair Display';
-        font-weight: 300;
+        font-weight: 400 !important;
   }
   
   img {
