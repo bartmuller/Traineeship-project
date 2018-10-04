@@ -1,41 +1,53 @@
-
-<h2  id="test123"> De lekkerste recepten </h2>
-<div class="container">
-        
-<div class="row">
-<<<<<<< HEAD
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
-           
-=======
->>>>>>> 1e85e2a4cba7f89d0261b953d7dd4e306b5fd987
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+
+<h1  id="receptenbox"> De lekkerste recepten </h1>
+
+
+
+    <div class="carousel-wrapper-custom">
+        <div class="carousel-custom" data-flickity>
+          
+                   
+         
    
-    <div class="col-lg-4 col-md-4"  *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"  (click)="onSelect(hero)">
-        <div class="card" style="width: 100%;">
+    <div class="col-lg-4 col-md-4 carousel-cell-custom"  *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"  (click)="onSelect(hero)">
+        <div class="card">
         <div class="card-body">
-          <h5 class="card-title">{{hero.title}}</h5>
+          <h2 class="card-title">{{hero.title}}</h2>
           <span class="badge badge-pill badge-success" >{{hero.categorie}}</span>
           <span class="badge badge-pill badge-success" >{{hero.meal}}</span>
           <span class="badge badge-pill badge-success" >{{hero.time}} minuten</span>
           <img class="card-img-top" src='{{hero.image}}' alt="Card image cap">
-          <p class="card-text">{{hero.description}}</p>
-          <ul>
-                <li *ngFor="let hero of heroes">{{hero.ingredient1}}</li>
+          <p class="card-text">{{hero.description  | limitTo:80}}</p>
+            <ul>
+                <li>{{hero.ingredient1}}</li>
+                <li>{{hero.ingredient2}}</li>
+                <li>{{hero.ingredient3}}</li>
             </ul>
-            <a class="card-link" routerLink="recept-page" [class.activated]="currentUrl == '/recept-page/1'">Link naar recept</a>
+         <!--   <a class="card-link" routerLink="recept-page" [class.activated]="currentUrl == '/recept-page/1'">Link naar recept</a> -->
         </div>
         </div>
     </div>
 
-         
-       
+
+
+
+    
+    </div>
 </div>
 
 
 
     
-
-
 
 <app-recept-page [hero]="selectedHero"></app-recept-page> 
 
@@ -43,15 +55,4 @@
 
 
 
-<script text="text/javascript">
 
-    (function($) {
-    "use strict";
-
-    // manual carousel controls
-    $('.next').click(function(){ $('.carousel').carousel('next');return false; });
-    $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
-    
-})(jQuery);
-
-</script>

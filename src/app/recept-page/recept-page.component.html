@@ -1,17 +1,28 @@
 
 
 <div class="container" *ngIf = "hero">
-    <div class="row">
+    <div class="row justify-content-md-center">
         <div class="col-8 col-md-8">
             <h1>{{hero.title}}</h1>
             <img class="image_receptpage" src='{{hero.image}}' alt="Card image cap">
+            <span class="badge badge-pill badge-success" >{{hero.meal}}</span>
+            <span class="badge badge-pill badge-success" >{{hero.categorie}}</span>
+            <span class="badge badge-pill badge-success" >{{hero.time}}</span>
+            
+            <h3>Bereidingswijze:</h3>
             <p>{{hero.description}}</p>
 
+            <h3>Ingredienten:</h3>
                 <ul>
-                    <li><p><small class="text-muted">{{hero.meal}}</small></li>
-                    <li><p><small class="text-muted">{{hero.categorie}}</small></li>
-                    <li><p><small class="text-muted">{{hero.time}}</small></li>
-                </ul>    
+                    <li>{{hero.ingredient1}}</li>
+                    <li>{{hero.ingredient2}}</li>
+                    <li>{{hero.ingredient3}}</li>
+                    <li>{{hero.ingredient4}}</li>
+                    <li>{{hero.ingredient5}}</li>
+                </ul>
+
+           
+                    
     
         </div>
     </div>

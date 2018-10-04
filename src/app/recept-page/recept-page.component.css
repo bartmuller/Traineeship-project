@@ -1,6 +1,11 @@
-h1 {
-    margin-top:30px;
+h1, h2, h3, h4 {
     font-family: 'Playfair Display';
+}
+
+
+h1, h3 {
+    margin-top:30px;
+    
 }
 
 img{
@@ -10,6 +15,3 @@ img{
     height: 400px;
 }
 
-p {
-    margin-top:30px;
-}

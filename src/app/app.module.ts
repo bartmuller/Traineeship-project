@@ -18,6 +18,10 @@ import { IngelogdComponent } from './ingelogd/ingelogd.component';
 import { WwVergetenComponent } from './ww-vergeten/ww-vergeten.component';
 import { FormsModule } from '@angular/forms';
 
+import { TruncatePipe } from './exponential-strength.pipe';
+import { FooterComponent } from './footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,14 +35,17 @@ import { FormsModule } from '@angular/forms';
     LogInComponent,
     IngelogdComponent,
     WwVergetenComponent,
-  
+    TruncatePipe,
+    FooterComponent,
+   
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
     
   ],
   providers: [],
