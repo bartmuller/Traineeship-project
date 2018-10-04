@@ -17,12 +17,16 @@
       
         }
   
-  
+  .card-body p  {
+    margin-top:20px;
+  }
   
   
   h1 {
       text-align: center;
       font-family: 'Playfair Display';
+      margin-top:75px;
+      margin-bottom:25px;
   }
   
   
@@ -33,14 +37,17 @@
   
   img {
       object-fit: cover; /**/
-      margin-top:30px; /**/
+      margin-top:25px; /**/
+     
   
       height: 200px; /**/
   }
-  
-  .card {
-    background-color: grey;
+
+p{
+    color:red;
   }
+  
+
     
   
   
