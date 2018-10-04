@@ -12,7 +12,7 @@ export const HEROES: Hero[] = [
   ingredient5:'750 g ratatouille à la Provençale in blik',
   },
   
-  {id: 2, title: 'Wa­fels met kar­de­mom-gem­ber­room', categorie:'zoetigheid', meal:'dessert', time:'10 min', image: 'https://images.unsplash.com/photo-1459789034005-ba29c5783491?ixlib=rb-0.3.5&s=5be38addeb6977832cb4213ea1ea132f&auto=format&fit=crop&w=550&q=80', 
+  {id: 2, title: 'Wa­fels met room', categorie:'zoetigheid', meal:'dessert', time:'10 min', image: 'https://images.unsplash.com/photo-1459789034005-ba29c5783491?ixlib=rb-0.3.5&s=5be38addeb6977832cb4213ea1ea132f&auto=format&fit=crop&w=550&q=80', 
   description:'Klop de slagroom met de gemalen kardemom, gemalen gember en de kristalsuiker stijf. Verdeel over de wafels, garneer met de blauwe bessen en serveer direct.',  
   ingredient1:'125 ml verse slagroom', 
   ingredient2:'1 tl gemalen gember', 
