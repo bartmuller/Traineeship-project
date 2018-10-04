@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AddReceptComponent } from './add-recept/add-recept.component';
@@ -15,8 +14,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ReceptPageComponent } from './recept-page/recept-page.component';
 import { RegisterComponent } from './register/register.component';
 import { LogInComponent } from './log-in/log-in.component';
-
-
+import { IngelogdComponent } from './ingelogd/ingelogd.component';
+import { WwVergetenComponent } from './ww-vergeten/ww-vergeten.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,13 +29,16 @@ import { LogInComponent } from './log-in/log-in.component';
     ReceptPageComponent,
     RegisterComponent,
     LogInComponent,
-
+    IngelogdComponent,
+    WwVergetenComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule
     
   ],
   providers: [],
